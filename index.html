@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="output.css">
+  <script defer src="script.js"></script>
+  <title>Pod Request</title>
+
+</head>
+<body class="w-[100%] h-[100vh] bg-[url(Images/image-host.jpg)] bg-no-repeat md:bg-right font-[Chivo]">
+<div class="bg-[#121725e6] h-[100%] px-[1.88rem] py-[3.5rem]">
+    <header class="justify-self-center">
+        <img class="w-[80%]" src="./Images/logo.svg" alt="Pod Logo">
+    </header>
+    
+    <main class="mt-[4.7rem] flex flex-col gap-[1.18rem]">
+        <h1 class="text-[#54E6AF] font-extralight text-[1.583rem] text-center">PUBLISH YOUR PODCASTS <span class="text-[#fff]">EVERYWHERE.</span></h1>
+
+        <p class="text-[#fff] font-light text-[0.94rem] text-center">Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple
+            Podcasts, Google Podcasts, Pocket Casts and more!
+        </p>
+
+         <div class="my-[1rem] grid grid-cols-4  items-center">
+            <img class="w-15 h-auto" src="./Images/spotify.svg" alt="spotify logo">
+            <img class="w-15 h-auto" src="./Images/apple-podcast.svg" alt="Apple podcast logo">
+            <img class="w-17 h-auto" src="./Images/google-podcasts.svg" alt="Google Podcast logo">
+            <img class="w-20 h-auto" src="./Images/pocket-casts.svg" alt="Pocket cast logo">
+        </div>
+
+        <form id="form" class="flex flex-col gap-[0.85rem]">
+            <div class="input-control">
+                <input type="text" id="email" class="text-sm rounded-[4rem] w-full p-3 pl-6.5 bg-[#2C344B] placeholder-[#C2CBE5] dark:text-white" placeholder="Email address"/>
+                <div class="error"></div>
+            </div>
+            <button type="submit" class="text-[#121725] bg-[#54E6AF] hover:bg-[#B3FFE2] font-bold rounded-[4rem] text-sm w-full px-5 py-3 text-center">Request Access</button>
+        </form>
+
+       
+    </main>
+</div>    
+</body>
+</html>
