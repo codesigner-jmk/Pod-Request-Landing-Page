@@ -10,36 +10,42 @@
   <title>Pod Request</title>
 
 </head>
-<body class="h-[100vh] bg-[url(Images/image-host.jpg)] bg-no-repeat bg-cover md:bg-right md:bg-contain font-[Chivo]">
-<div class="bg-[#121725e6] h-[100%] px-[1.88rem] py-[6.74rem] ">
-    <header class="justify-self-center">
+<body class="bg-[#121725]  font-[Chivo] xl:pt-[7rem]">
+<div class="h-[100vh] xl:h-auto bg-[url(Images/image-host.jpg)] xl:bg-[url(Images/image-host-desktop.jpg)] bg-no-repeat bg-cover md:bg-top-right md:bg-auto">
+<div class="bg-[#121725e6] md:bg-transparent h-[100%] px-[1.88rem] md:px-[2.18rem] py-[4.74rem] xl:py-[0rem] ">
+    <header class="justify-self-center md:justify-self-start">
         <img class="w-[80%]" src="./Images/logo.svg" alt="Pod Logo">
     </header>
     
-    <main class="mt-[7.7rem] flex flex-col gap-[1.8rem]">
-        <h1 class="text-[#54E6AF] font-extralight text-[1.583rem] text-center">PUBLISH YOUR PODCASTS <span class="text-[#fff]">EVERYWHERE.</span></h1>
+    <main class="mt-[4.7rem] md:mt-[6.5rem] xl:mt-[5.5] md:pt-[3rem] flex flex-col gap-[1.5rem] md:bg-[#121725] md:w-[90%] xl:w-[62%]">
+        <h1 class="text-[#54E6AF] font-extralight text-[1.583rem] md:text-[2.95rem] xl:text-[3.9rem] xl:leading-17 text-center md:text-left md:order-1">PUBLISH YOUR PODCASTS <span class="text-[#fff]">EVERYWHERE.</span></h1>
 
-        <p class="text-[#fff] font-light text-[0.94rem] text-center">Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple
+        <p class="text-[#fff] font-light text-[0.94rem] md:text-[1.15rem] xl:text-[1.4rem] md:pr-[11rem] xl:pr-[18rem] text-center md:text-left md:order-2">Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple
             Podcasts, Google Podcasts, Pocket Casts and more!
         </p>
 
-         <div class="my-[1rem] grid grid-cols-4  items-center">
-            <img class="w-15 h-auto" src="./Images/spotify.svg" alt="spotify logo">
-            <img class="w-15 h-auto" src="./Images/apple-podcast.svg" alt="Apple podcast logo">
-            <img class="w-17 h-auto" src="./Images/google-podcasts.svg" alt="Google Podcast logo">
-            <img class="w-20 h-auto" src="./Images/pocket-casts.svg" alt="Pocket cast logo">
+         <div class="my-[1rem] grid grid-cols-4  items-center md:order-4">
+            <img class="w-15 md:w-22 xl:w-30  h-auto" src="./Images/spotify.svg" alt="spotify logo">
+            <img class="w-15 md:w-22 xl:w-30 h-auto" src="./Images/apple-podcast.svg" alt="Apple podcast logo">
+            <img class="w-17 md:w-24 xl:w-40 h-auto" src="./Images/google-podcasts.svg" alt="Google Podcast logo">
+            <img class="w-20 md:w-30 xl:w-40 h-auto" src="./Images/pocket-casts.svg" alt="Pocket cast logo">
         </div>
 
-        <form id="form" class="flex flex-col gap-[0.85rem]">
+        <form id="form" class=" md:order-3  md:my-5 xl:my-7 md:mr-[11rem] xl:mr-[18rem]">
+            <div class="flex flex-col gap-[0.85rem] md:gap-0 md:w-[100%] md:bg-[#2c344b]  md:rounded-[4rem] md:flex-row md:justify-between">
             <div class="input-control">
-                <input type="text" id="email" class="text-sm rounded-[4rem] w-full p-3 pl-6.5 bg-[#2C344B] placeholder-[#C2CBE5] dark:text-white" placeholder="Email address"/>
+                <input type="text" id="email" class="text-sm xl:text-lg rounded-[4rem] w-full md:w-[100%] p-3 xl:p-5 pl-6.5 bg-[#2C344B] placeholder-[#C2CBE5] dark:text-white" placeholder="Email address"/>
                 <div class="error"></div>
             </div>
-            <button type="submit" class="text-[#121725] bg-[#54E6AF] hover:bg-[#B3FFE2] font-bold rounded-[4rem] text-sm w-full px-5 py-3 text-center">Request Access</button>
+            <button type="submit" class="text-[#121725] bg-[#54E6AF] hover:bg-[#B3FFE2] font-bold rounded-[4rem] text-sm xl:text-lg w-full md:w-[40%] px-5 md:px-0 py-3 md:py-0 xl:py-5 text-center">Request Access</button>
+        </div>
         </form>
-
-       
     </main>
+
+    <footer class="hidden md:block md:mt-25 xl:float-end xl:mt-[-8rem]">
+        <img src="./Images/bg-pattern-dots.svg" alt="">
+    </footer>
+</div>
 </div>   
 </body>
 </html>
